@@ -1,0 +1,155 @@
+.heading {
+  /* Display M/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 60px;
+  /* identical to box height, or 115% */
+
+  letter-spacing: -0.01em;
+
+  /* Gray/700 */
+
+  color: #272d37;
+}
+
+.des {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+
+  /* Gray/700 */
+
+  color: #272d37;
+}
+
+.day {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  width: 132px;
+  height: 44px;
+
+  /* Neutral/100 */
+
+  background: #f8f9fb;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+  margin-top: 7rem;
+}
+
+.day1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 40px;
+
+  /* Purple (Secondary)/600 */
+  color: #f8f9fb;
+  background: #574efa;
+  border-radius: 100px;
+}
+
+.date {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+
+  width: 160px;
+  height: 48px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 56px;
+  height: 56px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.long {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 6px;
+
+  width: 247px;
+  height: 46px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  /* Shadow/XSM */
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+  border-radius: 100px;
+}
+
+
+.cal{
+    margin-bottom: 20rem;
+    margin-top: 2rem;
+}

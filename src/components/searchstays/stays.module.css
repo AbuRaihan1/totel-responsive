@@ -1,0 +1,19 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0px 64px;
+  gap: 24px;
+
+  width: 1512px;
+  height: 1314px;
+
+  /* Base/White */
+
+  background: #ffffff;
+}
+
+.img {
+  width: 651px;
+  height: 1156px;
+}

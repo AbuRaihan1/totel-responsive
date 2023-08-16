@@ -1,0 +1,144 @@
+.body {
+  /* .Blog Base */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 296px;
+  height: 455px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.img {
+  width: 296px;
+  height: 285px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.hname {
+  width: 146px;
+  height: 28px;
+
+  /* Headline XXS/Desktop/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  margin-bottom: 6px;
+  /* Base/Black */
+  white-space: nowrap;
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.dates {
+  width: 83px;
+  height: 20px;
+
+  /* Text S/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  margin-bottom: 6px;
+  letter-spacing: -0.1px;
+
+  /* Base/Black */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  white-space: nowrap;
+}
+
+.about {
+  width: 264px;
+  height: 40px;
+
+  /* Text S/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  letter-spacing: -0.1px;
+  color: #6b7b8f;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.rate {
+  width: 69px;
+  height: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 12px;
+  white-space: nowrap;
+}
+
+.star {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 72px;
+  margin-bottom:10px;
+}

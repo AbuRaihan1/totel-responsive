@@ -1,0 +1,155 @@
+.box {
+    /* Call to action */
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 0px;
+  
+    overflow-x: inherit;
+    height: 320px;
+    width: 1280px;
+    gap: 4px;
+  
+    /* Purple (Secondary)/600 */
+  
+    background: #574efa;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .content1 {
+    /* Text S/Semibold */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: -0.1px;
+    /* Base/White */
+    color: #ffffff;
+    /* Inside auto layout */
+    white-space: nowrap;
+  }
+  
+  .content2 {
+  
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .button{
+      display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 6px;
+  
+  width: 119px;
+  height: 46px;
+  
+  /* Base/White */
+  
+  background: #FFFFFF;
+  border-radius: 100px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  }
+  
+  .content3{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 0px;
+  
+  width: 1512px;
+  height: 240px;
+  
+  /* Purple (Secondary)/600 */
+  
+  background: #574EFA;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 5;
+  align-self: stretch;
+  flex-grow: 0;
+  }
+  
+  .form{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 16px;
+      gap: 8px;
+      
+      width: 352px;
+      height: 46px;
+      
+      /* Base/White */
+      
+      background: #FFFFFF;
+  }
+  
+  .submit{
+      display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 6px;
+  
+  width: 88px;
+  height: 46px;
+  color:white;
+  /* Base/Black */
+  
+  background: #000000;
+  }
+  
+  .txt{
+      /* Text S/Regular */
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  
+  letter-spacing: -0.1px;
+  margin-bottom:1rem ;
+  /* Primary/200 */
+  
+  color: #B1CCFB;
+  }

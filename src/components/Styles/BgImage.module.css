@@ -1,0 +1,25 @@
+.bg{
+    /* Frame 1 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 64px 124px;
+gap: 10px;
+
+width: 1512px;
+height: 440px;
+
+background: url(/totel/public/Images/Background.png);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}

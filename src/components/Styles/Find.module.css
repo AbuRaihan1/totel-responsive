@@ -1,0 +1,115 @@
+.where {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 12px;
+
+  width: 340px;
+  height: 48px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.date {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 10px;
+
+  width: 160px;
+  height: 48px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.time {
+  /* Input */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 12px;
+
+  width: 129px;
+  height: 48px;
+
+  /* Base/White */
+
+  background: #ffffff;
+  /* Neutral/700 */
+
+  border: 1px solid #dae0e6;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.where:hover{
+  cursor: pointer;
+}
+.date:hover{
+  cursor: pointer;
+  background-color: #5F6D7E; /* Change the background color on hover */
+  color: #FFFFFF;
+  
+}
+.time:hover{
+  cursor: pointer;
+  background-color: #5F6D7E; /* Change the background color on hover */
+  color: #FFFFFF;
+  
+}
+
+.search:hover{
+  cursor: pointer;
+  background-color: #5F6D7E; /* Change the background color on hover */
+  color: #FFFFFF;
+}
+
+
