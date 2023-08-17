@@ -23,13 +23,15 @@
   font-size: 18px;
 }
 
-.des {
+/* .des {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   margin-top: 3rem;
-}
+  padding: 30px 0;
+  text-align: center;
+} */
 
 /* .maps {
   margin-top: 2rem;

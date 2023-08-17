@@ -204,14 +204,32 @@ export default function Hoteldetails() {
                 </button>
               </div>
             </div>
-            <div className="">
-              <div className={styles.des}>Where you’ll be</div>
-              <div>here will be map</div>
-            </div>
           </div>
         </div>
         <div className="">
           <Detailscard />
+        </div>
+      </div>
+
+      <div className="md:w-3/4 mx-auto w-full m-16">
+        <div className={styles.des}>Where you’ll be</div>
+        <div className="mapouter mx-6">
+          <div className="gmap_canvas">
+            <iframe
+              className="gmap_iframe"
+              width="100%"
+              frameBorder="0"
+              scrolling="no"
+              src="https://maps.google.com/maps?width=564&amp;height=400&amp;hl=en&amp;q=Banani, Dhaka, Bangladesh&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+          <style>
+            {`
+          .mapouter{position:relative;}
+          .gmap_canvas{overflow:hidden;background:none!important;height:400px;}
+          .gmap_iframe{height:400px!important;}
+        `}
+          </style>
         </div>
       </div>
       <Footer1 />
