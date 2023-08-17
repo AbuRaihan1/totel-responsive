@@ -8,11 +8,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function CategoryBox() {
   return (
-    <div>
-      {/* <div className="flex justify-center gap-2 mt-3 text-grey">
+    <div className="">
+      <div className="flex overflow-x-auto items-center my-5 py-4 px-5 gap-4 xl:justify-center">
         <button className={styles.button}>
           <p className={styles.text}>Price</p>
-          <div className="ml-2"><RiArrowDropDownLine /></div>
+          <div className="ml-2">
+            <RiArrowDropDownLine />
+          </div>
         </button>
         <button className={styles.button}>
           <p className={styles.text}>Type of place</p>
@@ -47,7 +49,7 @@ export default function CategoryBox() {
           </div>
           <p className={styles.text}>Show in Map </p>
         </button>
-      </div> */}
+      </div>
       <Cards />
     </div>
   );

@@ -13,6 +13,7 @@ export default function Cards() {
         <HotelCard />
         <HotelCard />
         <HotelCard />
+        <HotelCard />
       </div>
     </div>
   );
