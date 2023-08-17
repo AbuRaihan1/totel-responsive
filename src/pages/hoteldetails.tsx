@@ -72,160 +72,147 @@ export default function Hoteldetails() {
           </div>
         </div>
       </div>
-      {/* <div className="flex">
+
+      {/* hosted by part start from here  */}
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-16 mx-10">
         <div className="mb-4">
-          <Container>
-            <div className="flex flex-row items-center gap-3 p-4 rounded-full cursor-pointer md:py-1 md:px-2">
-              <div className="md:block">
-                <Avatar src={""} />
-              </div>
-              <div className={styles.hostedby}>Hosted by Gahazal</div>
-              <button className="px-6 py-2 ml-20 text-xs text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent">
-                View Profile
-              </button>
+          <div className="flex flex-row items-center gap-3 p-4 rounded-full cursor-pointer md:py-1 md:px-2">
+            <div className="md:block">
+              <Avatar src={""} />
             </div>
-          </Container>
-          <Container>
-            <div className="flex items-center justify-start gap-2 mt-2 ml-2">
-              <IoShieldCheckmark />
-              <div>
-                To protect your payment, never transfer money or communicate
-                outside of the Airbnb website or app.
-              </div>
+            <div className={styles.hostedby}>Hosted by Gahazal</div>
+            <button className="px-6 py-2 ml-20 text-sm text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent font-semibold">
+              View Profile
+            </button>
+          </div>
+
+          <div className="flex items-center justify-start gap-2 mt-2 ml-2">
+            <IoShieldCheckmark />
+            <div>
+              To protect your payment, never transfer money or communicate
+              outside of the Airbnb website or app.
             </div>
-          </Container>
+          </div>
+
           <div>
-            <Container>
+            <div>
+              <div className={styles.des}>Description</div>
               <div>
-                <div className={styles.des}>Description</div>
-                <div>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do
-                  <br />
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  <br />
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris
-                  <br />
-                </div>
-                <div>
-                  <button className="px-6 py-2 mt-3 text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent">
-                    <p className="text-xs">Show more</p>
-                  </button>
-                </div>
-                <div className="mt-4">
-                  <div className={styles.des}>Offered Amenities</div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                <br />
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                <br />
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                <br />
+              </div>
+              <div>
+                <button className="px-6 py-2 mt-3 text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent">
+                  <p className="text-sm font-semibold">Show more</p>
+                </button>
+              </div>
+              <div className="mt-4">
+                <div className={styles.des}>Offered Amenities</div>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
+                    <div> Garden View</div>
                   </div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
-                  </div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
-                  </div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
-                  </div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
-                  </div>
-                  <div className="flex gap-20 my-4">
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <GiThreeLeaves />
-                      </div>
-                      <div> Garden View</div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div>
-                        <TbToolsKitchen2 />
-                      </div>
-                      <div>Kitchen</div>
-                    </div>
+                    <div>Kitchen</div>
                   </div>
                 </div>
-                <div>
-                  <button className="px-6 py-2 text-xs text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent">
-                    Show more amenities
-                  </button>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
+                    </div>
+                    <div> Garden View</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
+                    </div>
+                    <div>Kitchen</div>
+                  </div>
+                </div>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
+                    </div>
+                    <div> Garden View</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
+                    </div>
+                    <div>Kitchen</div>
+                  </div>
+                </div>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
+                    </div>
+                    <div> Garden View</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
+                    </div>
+                    <div>Kitchen</div>
+                  </div>
+                </div>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
+                    </div>
+                    <div> Garden View</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
+                    </div>
+                    <div>Kitchen</div>
+                  </div>
+                </div>
+                <div className="flex gap-20 my-4">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <GiThreeLeaves />
+                    </div>
+                    <div> Garden View</div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <TbToolsKitchen2 />
+                    </div>
+                    <div>Kitchen</div>
+                  </div>
                 </div>
               </div>
-              <div className="">
-                <div className={styles.des}>Where you’ll be</div>
-                <div>
-                  <Image
-                    className={styles.maps}
-                    src="/Images/Maps.png"
-                    alt="Image"
-                    width={0}
-                    height={0}
-                    unoptimized
-                  />
-                </div>
+              <div>
+                <button className="px-6 py-2 text-sm text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent font-semibold">
+                  Show more amenities
+                </button>
               </div>
-            </Container>
+            </div>
+            <div className="">
+              <div className={styles.des}>Where you’ll be</div>
+              <div>here will be map</div>
+            </div>
           </div>
         </div>
-        <div className="mr-10">
+        <div className="">
           <Detailscard />
         </div>
-      </div> */}
+      </div>
       <Footer1 />
     </div>
   );
