@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function HotelCard() {
   return (
     <Link href="hoteldetails">
-      <div className="shadow-2xl rounded-lg">
+      <div className="shadow-2xl rounded-lg mb-2">
         <Image
           className="w-full h-[300px]"
           src="/Images/room.jpg"
@@ -26,11 +26,13 @@ export default function HotelCard() {
             </div>
           </div>
 
-          <h2 className={styles.dates}>24 April 2023 - 28 April 2023</h2>
-          <h3 className={styles.about}>
-            But happy to move in with more than <br />
-            that,I’m super easy going and tidy.
-          </h3>
+          <div className="px-2">
+            <h2 className={styles.dates}>25 April 2023 - 28 April 2023</h2>
+            <h3 className={styles.about}>
+              But happy to move in with more than <br />
+              that,I’m super easy going and tidy.
+            </h3>
+          </div>
 
           <p className={styles.rate}>$200/night</p>
         </div>
