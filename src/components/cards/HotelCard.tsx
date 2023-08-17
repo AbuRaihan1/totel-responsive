@@ -6,9 +6,9 @@ import Link from "next/link";
 export default function HotelCard() {
   return (
     <Link href="hoteldetails">
-      <div className={styles.body}>
+      <div className="shadow-2xl rounded-lg">
         <Image
-          className={styles.img}
+          className="w-full h-[300px]"
           src="/Images/room.jpg"
           alt="Hotel Image"
           width={0}
@@ -16,7 +16,7 @@ export default function HotelCard() {
           unoptimized
         />
         <div className="p-4">
-          <div className="flex">
+          <div className="flex items-center justify-between">
             <h2 className={styles.hname}>Hotel Name</h2>
             <div className={styles.star}>
               <div>

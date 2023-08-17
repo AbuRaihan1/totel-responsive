@@ -1,16 +1,22 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { Menu } from "primereact/menu";
-import {  IoMdNotificationsOutline } from "react-icons/io";
+import { IoMdNotificationsOutline } from "react-icons/io";
 import Notifications from "@/components/Notifications";
-import { FiChevronDown, FiHelpCircle } from "react-icons/fi";
+import { FiChevronDown, FiHelpCircle, FiMenu, FiX } from "react-icons/fi";
 import { MdOutlinePersonSearch, MdPermContactCalendar } from "react-icons/md";
 import { FaHandsHelping, FaUserFriends } from "react-icons/fa";
 import { IoCreateSharp } from "react-icons/io5";
 type Props = {};
 
 function Nav({}: Props) {
-  const menuLeft = useRef<Menu>(null);
+  // const menuLeft = useRef<Menu>(null);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuLeft = useRef(null);
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   let items = [
     {
@@ -31,8 +37,8 @@ function Nav({}: Props) {
     },
   ];
   return (
-    <header className="h-[54px] z-10 font-text-button-semibold-large bg-white relative">
-      <nav className="border-b-2   shadow-md bg-white  border-card px-24 py-2 flex justify-between items-center ">
+    <header className="h-[54px] z-10 font-text-button-semibold-large bg-white relative border">
+      <nav className="border-b-2 shadow-md bg-white  border-card px-24 py-2 flex justify-between items-center">
         <div>
           <Link href="/">
             <img className="h-[32.65px]" alt="" src="/svg/main_logo.svg" />
@@ -63,31 +69,20 @@ function Nav({}: Props) {
                 className="dropdown-content z-[1] menu p-2 rounded-md bg-white w-60 mt-5 shadow-lg"
               >
                 <div className="flex flex-col p-3 gap-6">
-                 
-                    <div className="flex group  items-center gap-2">
-                      <MdOutlinePersonSearch
-                        className="text-purple"
-                        size={20}
-                      />
+                  <div className="flex group  items-center gap-2">
+                    <MdOutlinePersonSearch className="text-purple" size={20} />
 
-                      <Link href="/looking-for-partner">
-                        <p className="navlinks">Looking for partner</p>
-                      </Link>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <IoCreateSharp
-                        className="text-purple"
-                        size={20}
-                      />
+                    <Link href="/looking-for-partner">
+                      <p className="navlinks">Looking for partner</p>
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <IoCreateSharp className="text-purple" size={20} />
 
-                      <Link href="/partner-hosting">
-                        <p className="navlinks">Partner hosting</p>
-                      </Link>
-                    </div>
-               
-                 
-                   
-                 
+                    <Link href="/partner-hosting">
+                      <p className="navlinks">Partner hosting</p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,50 +106,35 @@ function Nav({}: Props) {
                 className="dropdown-content z-[1] menu p-2 rounded-md bg-white w-60 mt-5 shadow-lg"
               >
                 <div className="flex flex-col p-3 gap-6">
-                 
-                    <div className="flex group  items-center gap-2">
-                      <MdPermContactCalendar
-                        className="text-purple"
-                        size={20}
-                      />
+                  <div className="flex group  items-center gap-2">
+                    <MdPermContactCalendar className="text-purple" size={20} />
 
-                      <Link href="/contact">
-                        <p className="navlinks">Contact</p>
-                      </Link>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FiHelpCircle
-                        className="text-purple"
-                        size={20}
-                      />
+                    <Link href="/contact">
+                      <p className="navlinks">Contact</p>
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FiHelpCircle className="text-purple" size={20} />
 
-                      <Link href="/help">
-                        <p className="navlinks">Help</p>
-                      </Link>
-                    </div>
-               
-                 
-                    <div className="flex group  items-center gap-2">
-                      <FaUserFriends
-                        className="text-purple"
-                        size={20}
-                      />
+                    <Link href="/help">
+                      <p className="navlinks">Help</p>
+                    </Link>
+                  </div>
 
-                      <Link href="/ourpartners">
-                        <p className="navlinks">Our Partners</p>
-                      </Link>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FaHandsHelping
-                        className="text-purple"
-                        size={20}
-                      />
+                  <div className="flex group  items-center gap-2">
+                    <FaUserFriends className="text-purple" size={20} />
 
-                      <Link href="/tutorial">
-                        <p className="navlinks">Tutorial</p>
-                      </Link>
-                    </div>
-                 
+                    <Link href="/ourpartners">
+                      <p className="navlinks">Our Partners</p>
+                    </Link>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaHandsHelping className="text-purple" size={20} />
+
+                    <Link href="/tutorial">
+                      <p className="navlinks">Tutorial</p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,6 +167,63 @@ function Nav({}: Props) {
       </nav>
       <Menu model={items} popup ref={menuLeft} id="popup_menu_left" />
     </header>
+
+    // <header className="h-[54px] z-10 font-text-button-semibold-large bg-white relative border">
+    //   <nav className="border-b-2 shadow-md bg-white border-card px-24 py-2 flex justify-between items-center">
+    //     <div>
+    //       <Link href="/">
+    //         <img className="h-[32.65px]" alt="" src="/svg/main_logo.svg" />
+    //       </Link>
+    //     </div>
+
+    //     <div className="lg:hidden">
+    //       <button
+    //         onClick={toggleMenu}
+    //         className="text-purple"
+    //         aria-label="Toggle Menu"
+    //       >
+    //         {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+    //       </button>
+    //     </div>
+
+    //     <div
+    //       className={`lg:flex items-center gap-12 ${
+    //         isMenuOpen ? "block" : "hidden"
+    //       }`}
+    //     >
+    //       <Link href="/room-stays">
+    //         <p className="navlinks">Find Room</p>
+    //       </Link>
+    //       <Link href="/about">
+    //         <p className="navlinks">About</p>
+    //       </Link>
+    //       <Link href="/career">
+    //         <p className="navlinks">Career</p>
+    //       </Link>
+    //       <div className="flex items-center gap-1 cursor-pointer">
+    //         {/* Dropdown component */}
+    //         {/* <div className="dropdown dropdown-bottom">
+    //     ... your dropdown code ...
+    //   </div> */}
+    //       </div>
+    //       <Link href="/listing">
+    //         <p className="navlinks">Listing</p>
+    //       </Link>
+    //       <div className="flex items-center gap-1 cursor-pointer">
+    //         {/* More dropdown component */}
+    //         {/* <div className="dropdown dropdown-bottom">
+    //     ... your dropdown code ...
+    //   </div> */}
+    //       </div>
+    //     </div>
+
+    //     <div className="flex items-center gap-7">
+    //       {/* Notifications dropdown and user icon */}
+    //     </div>
+    //   </nav>
+    //   {/* Menu component */}
+    //   {/* <Menu model={items} popup ref={menuLeft} id="popup_menu_left" /> */}
+    // </header>
   );
 }
 

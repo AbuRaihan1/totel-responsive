@@ -4,9 +4,10 @@ import { BiSearch } from "react-icons/bi";
 import styles from "./Styles/Find.module.css";
 import Link from "next/link";
 import Date from "../pages/date";
-export default function Find () {
+export default function Find() {
   return (
     <div className="flex items-center justify-center mt-3">
+      {/* // <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1"> */}
       <div>
         <p className="font-semibold text-left">Where</p>
         <div className="my-4">
@@ -47,14 +48,14 @@ export default function Find () {
           </div>
         </div>
       </div>
-    
-        <div className="w-10 h-10 mt-5 ml-3 rounded-full bg-purple hover:cursor-pointer">
-          <Link href="searchfindstays">
+
+      <div className="w-10 h-10 mt-5 ml-3 rounded-full bg-purple hover:cursor-pointer">
+        <Link href="searchfindstays">
           <div className="hidden text-center text-white sm:block ">
             <BiSearch className="mt-3 ml-3 search-icon" />
           </div>
-          </Link>
-        </div>
+        </Link>
+      </div>
     </div>
   );
 }

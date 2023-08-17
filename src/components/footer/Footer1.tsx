@@ -6,10 +6,11 @@ import {
 import { BsFacebook, BsGooglePlay } from "react-icons/bs";
 import { FaAppStore } from "react-icons/fa";
 import Logo from "../navbar/Logo";
+import FooterInfo from "../home/NewFooter/FooterInfo";
 const Footer1 = () => {
   return (
-    <div>
-      <footer className="w-full py-4 overflow-x-hidden text-gray-400">
+    <div className="">
+      {/* <footer className="w-full py-4 overflow-x-hidden text-gray-400">
         <div className="container flex justify-around mx-2 text-black ">
           <div>
             <h2 className="text-sm font-semibold">Products</h2>
@@ -92,7 +93,9 @@ const Footer1 = () => {
             <AiOutlineInstagram size={18} />
           </div>
         </div>
-      </footer>
+      </footer> */}
+
+      <FooterInfo />
     </div>
   );
 };
