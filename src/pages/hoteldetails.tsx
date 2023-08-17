@@ -76,12 +76,13 @@ export default function Hoteldetails() {
       {/* hosted by part start from here  */}
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-16 mx-10">
         <div className="mb-4">
-          <div className="flex flex-row items-center gap-3 p-4 rounded-full cursor-pointer md:py-1 md:px-2">
-            <div className="md:block">
+          <div className="flex items-center md:py-1 md:px-2 justify-between">
+            <div className="flex items-center gap-2">
               <Avatar src={""} />
+              <div className={styles.hostedby}>Hosted by Gahazal</div>
             </div>
-            <div className={styles.hostedby}>Hosted by Gahazal</div>
-            <button className="px-6 py-2 ml-20 text-sm text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent font-semibold">
+
+            <button className="px-6 py-2 text-sm text-black transition-colors duration-300 bg-white border rounded-full border-grey hover:bg-black hover:text-white hover:border-transparent font-semibold">
               View Profile
             </button>
           </div>
