@@ -11,17 +11,16 @@ function About({}) {
       </Head>
 
       <RootLayout>
-        <div className="bg-greyish w-[94.5rem] overflow-hidden flex flex-col py-[4rem] px-[7.75rem] box-border items-center justify-center text-[3.25rem] lg:w-auto lg:h-auto md:flex-col sm:flex-col">
-          <div className="self-stretch flex flex-col items-start justify-center gap-[1rem] z-[0] lg:w-auto lg:h-auto lg:flex-col md:flex-col sm:flex-col">
-            <div className="relative tracking-[-0.01em] leading-[3.75rem] font-semibold">{`We are best for tours & travel`}</div>
-            <div className="relative text-[1.13rem] tracking-[-0.1px] leading-[1.63rem] inline-block w-[65.51rem]">
-              In this step, we will ask you which type of stays you have and if
-              guests will book the entire place or just a room. Then let us know
-              the location and how many guests can stay.
-            </div>
-          </div>
+        <div className="border bg-greyish mx-4 py-10 text-center">
+          <h2 className="text-[3.25rem] font-semibold">{`We are best for tours & travel`}</h2>
+          <p className=" text-[1.13rem] tracking-[-0.1px]  md:text-center text-justify">
+            In this step, we will ask you which type of stays you have and if
+            guests will book the entire place or just a room. Then let us know
+            the location and how many guests can stay.
+          </p>
         </div>
-        <div className="bg-system-background-light-primary w-[94.5rem] h-[34.63rem] flex flex-col py-[4rem] box-border items-center justify-center gap-[3.13rem] text-purple-600 lg:w-auto lg:h-auto md:flex-col sm:flex-col">
+
+        {/* <div className="bg-system-background-light-primary w-[94.5rem] h-[34.63rem] flex flex-col py-[4rem] box-border items-center justify-center gap-[3.13rem] text-purple-600 lg:w-auto lg:h-auto md:flex-col sm:flex-col">
           <div className="w-[80rem] flex flex-row items-center justify-start lg:w-auto lg:h-auto lg:flex-col md:flex-col sm:flex-col">
             <div className="w-[80rem] flex flex-col items-start justify-center gap-[0.5rem]">
               <div className="self-stretch flex flex-col items-start justify-center gap-[1rem] text-[2rem] text-gray-700">
@@ -173,7 +172,7 @@ function About({}) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </RootLayout>
     </div>
   );

@@ -14,7 +14,7 @@ export default function Home() {
       <Head data-theme="cupcake">
         <title>Totel - Book your comfort hotel</title>
       </Head>
-      {/* <Nav /> */}
+      <Nav />
       <Categories />
       <BrowseFromCategory />
       <GetInspiration />
