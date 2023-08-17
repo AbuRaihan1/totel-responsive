@@ -95,41 +95,43 @@ function About({}) {
           </div>
         </div>
 
-        {/* <div className="bg-greyish w-[94.5rem] flex flex-row py-[4rem] px-[7.5rem] box-border items-center justify-between text-[2rem] lg:w-auto lg:h-auto lg:flex-row md:flex-row gap-6 sm:flex-col">
-          <div className="w-[41.44rem] flex flex-col items-start justify-center gap-[2rem] lg:w-auto lg:h-auto lg:flex-col md:flex-col sm:flex-col">
-            <b className="self-stretch relative tracking-[-0.02em] leading-[2.5rem]">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mx-6 mt-12">
+          <div className="">
+            <p className="text-2xl font-bold py-3">
               Explore Real Adventure & Travels
-            </b>
-            <div className="self-stretch relative text-[1rem] tracking-[-0.1px] leading-[1.5rem] text-gray-50">
-              <p className="m-0">
+            </p>
+            <div className="text-[1rem] text-gray-50">
+              <p className="m-0 text-justify">
                 Real adventure and travels encompass engaging in thrilling and
                 immersive experiences that take you beyond the ordinary and
                 allow you to explore new places, cultures, and activities. Here
                 are a few suggestions to embrace real adventure and travels:
               </p>
               <p className="m-0">&nbsp;</p>
-              <p className="m-0">
+              <p className="m-0 text-justify">
                 Outdoor expeditions: Engage in activities like hiking, trekking,
                 camping, or mountaineering to experience natures beauty and
                 challenge yourself physically.
               </p>
               <p className="m-0">&nbsp;</p>
-              <p className="m-0">
+              <p className="m-0 text-justify">
                 Wildlife safaris: Embark on a safari tour to observe and
                 photograph diverse wildlife in their natural habitats, whether
                 its on a game drive in Africa or exploring national parks.
               </p>
             </div>
           </div>
-          <Image
-            className="relative rounded-3xl w-[33.5rem] h-[21.38rem] object-cover lg:flex-1 md:flex-1 sm:flex-1"
-            alt=""
-            width={500}
-            height={500}
-            src="/Images/rectangle-2474@2x.png"
-          />
+          <div>
+            <Image
+              className=" rounded-3xl h-[21.38rem] w-full"
+              alt=""
+              width={400}
+              height={0}
+              src="/Images/rectangle-2474@2x.png"
+            />
+          </div>
         </div>
-        <div className="bg-system-background-light-primary w-[94.5rem] flex flex-col items-center justify-start text-[2rem] text-purple-secondary-600 lg:w-auto lg:h-auto md:flex-col sm:flex-col">
+        {/* <div className="bg-system-background-light-primary w-[94.5rem] flex flex-col items-center justify-start text-[2rem] text-purple-secondary-600 lg:w-auto lg:h-auto md:flex-col sm:flex-col">
           <div className="bg-system-background-light-primary w-[80rem] flex flex-row py-[4rem] px-[0rem] box-border items-start justify-center gap-[7.63rem] lg:w-auto lg:h-auto lg:flex-row">
             <div className="flex-1 flex flex-col items-center justify-start gap-[0.63rem] lg:flex-[unset] lg:self-stretch">
               <b className="relative tracking-[-0.1px] leading-[1.5rem] text-purple">
