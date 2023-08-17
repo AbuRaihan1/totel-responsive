@@ -131,42 +131,27 @@ function About({}) {
             />
           </div>
         </div>
-        {/* <div className="bg-system-background-light-primary w-[94.5rem] flex flex-col items-center justify-start text-[2rem] text-purple-secondary-600 lg:w-auto lg:h-auto md:flex-col sm:flex-col">
-          <div className="bg-system-background-light-primary w-[80rem] flex flex-row py-[4rem] px-[0rem] box-border items-start justify-center gap-[7.63rem] lg:w-auto lg:h-auto lg:flex-row">
-            <div className="flex-1 flex flex-col items-center justify-start gap-[0.63rem] lg:flex-[unset] lg:self-stretch">
-              <b className="relative tracking-[-0.1px] leading-[1.5rem] text-purple">
-                4,958
-              </b>
-              <div className="relative text-[1.25rem] tracking-[-0.1px] leading-[1.5rem] text-gray-50">
-                Destinations
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-start gap-[0.63rem] lg:flex-[unset] lg:self-stretch">
-              <b className="relative tracking-[-0.1px] leading-[1.5rem] text-purple">
-                2,869
-              </b>
-              <div className="relative text-[1.25rem] tracking-[-0.1px] leading-[1.5rem] text-gray-50">
-                Total Properties
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-start gap-[0.63rem] lg:flex-[unset] lg:self-stretch">
-              <b className="relative tracking-[-0.1px] leading-[1.5rem] text-purple">
-                2M
-              </b>
-              <div className="relative text-[1.25rem] tracking-[-0.1px] leading-[1.5rem] text-gray-50">
-                Happy customers
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col items-center justify-start gap-[0.63rem] lg:flex-[unset] lg:self-stretch">
-              <b className="relative tracking-[-0.1px] leading-[1.5rem] text-purple">
-                5,749
-              </b>
-              <div className="relative text-[1.25rem] tracking-[-0.1px] leading-[1.5rem] text-gray-50">
-                Hotels Listing
-              </div>
+
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  py-8 bg-light-primary mt-10">
+          <div className="text-center    mb-5">
+            <b className="font-bold text-2xl  text-purple">4,958</b>
+            <div className=" text-[1.25rem]  text-gray-50">Destinations</div>
+          </div>
+          <div className="text-center   mb-5">
+            <b className="font-bold text-2xl  text-purple">2,869</b>
+            <div className=" text-[1.25rem]  text-gray-50">
+              Total Properties
             </div>
           </div>
-        </div> */}
+          <div className="text-center  mb-5">
+            <b className="font-bold text-2xl  text-purple">2M</b>
+            <div className="text-[1.25rem] text-gray-50">Happy customers</div>
+          </div>
+          <div className="text-center mb-5">
+            <b className="font-bold text-2xl  text-purple">5,749</b>
+            <div className="text-[1.25rem]  text-gray-50">Hotels Listing</div>
+          </div>
+        </div>
       </RootLayout>
     </div>
   );
