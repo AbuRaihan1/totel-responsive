@@ -7,9 +7,9 @@ type Props = {};
 
 function ListingPartner({}: Props) {
   return (
-    <div className="rounded-xl bg-white box-border w-[24rem] overflow-hidden shrink-0 flex flex-col items-start justify-start border-[1px] border-solid border-card">
+    <div className="rounded-xl bg-white box-border overflow-hidden shrink-0 flex flex-col items-start justify-start border-solid border-card border">
       <img
-        className="self-stretch relative max-w-full overflow-hidden h-[10.9rem] shrink-0 object-cover"
+        className="w-full relative  h-[12.9rem] object-cover"
         alt=""
         src="/Images/rectangle-22111111@2x.png"
       />

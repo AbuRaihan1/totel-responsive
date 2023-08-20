@@ -7,7 +7,7 @@ type Props = {};
 
 function SideNavigation({}: Props) {
   return (
-    <div className="self-stretch flex-1 overflow-hidden flex flex-col items-center justify-start text-[0.88rem] text-gray-700  lg:h-auto lg:flex-[unset] lg:self-stretch  md:flex-[unset] md:self-stretch sm:flex-col sm:flex-[unset] sm:self-stretch">
+    <div className=" self-stretch flex-1 overflow-hidden flex flex-col items-center justify-start text-[0.88rem] text-gray-700  lg:h-auto lg:flex-[unset] lg:self-stretch  md:flex-[unset] md:self-stretch sm:flex-col sm:flex-[unset] sm:self-stretch">
       <div className="self-stretch bg-white flex flex-col pt-[1.5rem] px-[1.5rem] pb-[0.75rem] items-start justify-start z-[1] lg:flex-row md:flex-row sm:flex-row">
         <div className="self-stretch rounded-8xs flex flex-row items-center justify-start md:flex-row sm:flex-row">
           <div className="flex-1 flex flex-row items-center justify-between gap-10 z-[0]">
@@ -24,7 +24,7 @@ function SideNavigation({}: Props) {
                   placeholder="Find.."
                 />
               </div>
-              <div className="rounded-3xl bg-purple shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.63rem] px-[1rem] items-center justify-center gap-[0.38rem] text-white">
+              <div className="border-2 rounded-3xl bg-purple shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.63rem] px-[1rem] items-center justify-center gap-[0.38rem] text-white">
                 <img
                   className="relative w-[1.13rem] h-[1.13rem] overflow-hidden shrink-0 hidden"
                   alt=""
@@ -144,7 +144,7 @@ function SideNavigation({}: Props) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 py-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 px-5 py-4 ">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => (
           <ListingPartner key={i} />
         ))}
