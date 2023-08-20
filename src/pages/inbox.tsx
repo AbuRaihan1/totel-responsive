@@ -7,6 +7,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { HiOutlineEmojiHappy, HiOutlineStar } from "react-icons/hi";
 import { IoMdAttach } from "react-icons/io";
 import io from "socket.io-client";
+import ListingSideBar from "./ListingSideBar";
 
 const ENDPOINT = "http://localhost:5001";
 let socket = io(ENDPOINT);
@@ -40,114 +41,7 @@ function Inbox() {
       </Head>
       <RootLayout>
         <div className="bg-white pt-3 flex flex-row items-start justify-start text-[0.94rem] text-gray-50  lg:h-auto  md:flex-row sm:flex-col">
-          <div className="self-stretch bg-white box-border w-[17.5rem] overflow-hidden shrink-0 flex flex-col py-[0.75rem] px-[0rem] items-start justify-start gap-[0.25rem] border-r-[1px] border-solid border-card  lg:h-auto md:flex-col sm:flex-col">
-            <Link href="/inbox">
-              <div className="self-stretch bg-purple-secondary-25 h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start relative gap-[0.75rem] ">
-                <img
-                  className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0 z-[0]"
-                  alt=""
-                  src="/svg/mail2222.svg"
-                />
-                <div className="flex-1 relative tracking-[-0.1px] leading-[1.38rem] font-semibold z-[1]">
-                  Inbox
-                </div>
-                <div className="rounded-xl bg-purple-600 h-[1.25rem] hidden flex-col py-[0rem] px-[0.38rem] box-border items-center justify-center z-[2] text-[0.88rem] text-white">
-                  <div className="relative tracking-[-0.1px] leading-[1.25rem] font-medium">
-                    13
-                  </div>
-                </div>
-                <img
-                  className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 hidden z-[3]"
-                  alt=""
-                  src="/svg/chevrondown111.svg"
-                />
-                <div className="absolute my-0 mx-[!important] h-full top-[0rem] bottom-[0rem] left-[0rem] bg-purple w-[0.19rem] z-[4]" />
-              </div>
-            </Link>
-            <Link href="/listing">
-              <div className="self-stretch bg-purple-secondary-25 h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] items-center justify-start relative gap-[0.75rem] ">
-                <img
-                  className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0 z-[0]"
-                  alt=""
-                  src="/svg/boxdoublehorizontal2.svg"
-                />
-                <div className="flex-1 relative tracking-[-0.1px] leading-[1.38rem] font-semibold z-[1]">
-                  Listings
-                </div>
-                <div className="rounded-xl bg-purple-600 h-[1.25rem] hidden flex-col py-[0rem] px-[0.38rem] box-border items-center justify-center z-[2] text-[0.88rem] text-white">
-                  <div className="relative tracking-[-0.1px] leading-[1.25rem] font-medium">
-                    9
-                  </div>
-                </div>
-                <img
-                  className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 hidden z-[3]"
-                  alt=""
-                  src="/svg/chevrondown111.svg"
-                />
-                <div className="absolute my-0 mx-[!important] h-full top-[0rem] bottom-[0rem] left-[0rem]  w-[0.19rem] z-[4]" />
-              </div>
-            </Link>
-            <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
-              <img
-                className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0"
-                alt=""
-                src="/svg/document21111111.svg"
-              />
-              <div className="flex-1 relative tracking-[-0.1px] leading-[1.38rem] font-semibold">
-                Bookings
-              </div>
-              <div className="rounded-xl bg-greyish h-[1.5rem] hidden flex-col py-[0rem] px-[0.38rem] box-border items-center justify-center text-[0.88rem] text-gray-700">
-                <div className="relative tracking-[-0.1px] leading-[1.25rem] font-medium">
-                  9
-                </div>
-              </div>
-              <img
-                className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 hidden"
-                alt=""
-                src="/svg/chevrondown111.svg"
-              />
-            </div>
-            <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
-              <img
-                className="relative w-[1.38rem] h-[1.38rem]"
-                alt=""
-                src="/svg/like111.svg"
-              />
-              <div className="flex-1 relative tracking-[-0.1px] leading-[1.38rem] font-semibold">
-                Wishlist
-              </div>
-              <div className="rounded-xl bg-greyish h-[1.5rem] hidden flex-col py-[0rem] px-[0.38rem] box-border items-center justify-center text-[0.88rem] text-gray-700">
-                <div className="relative tracking-[-0.1px] leading-[1.25rem] font-medium">
-                  9
-                </div>
-              </div>
-              <img
-                className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 hidden"
-                alt=""
-                src="/svg/chevrondown111.svg"
-              />
-            </div>
-            <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
-              <img
-                className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0"
-                alt=""
-                src="/svg/gear-1111121.svg"
-              />
-              <div className="flex-1 relative tracking-[-0.1px] leading-[1.38rem] font-semibold">
-                Settings
-              </div>
-              <div className="rounded-xl bg-greyish h-[1.5rem] hidden flex-col py-[0rem] px-[0.38rem] box-border items-center justify-center text-[0.88rem] text-gray-700">
-                <div className="relative tracking-[-0.1px] leading-[1.25rem] font-medium">
-                  9
-                </div>
-              </div>
-              <img
-                className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 hidden"
-                alt=""
-                src="/svg/chevrondown111.svg"
-              />
-            </div>
-          </div>
+          <ListingSideBar />
           <div className="border border-[#DAE0E6] border-b-0 min-h-[94vh]">
             <div className="card cursor-pointer hover:bg-[#F8F9FB] rounded-none">
               <div className="w-[350px] p-4">
