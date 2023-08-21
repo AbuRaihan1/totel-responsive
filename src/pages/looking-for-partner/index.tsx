@@ -179,167 +179,58 @@ function LookingForPartner() {
             {/* <div className="self-stretch relative tracking-[-0.1px] leading-[1.25rem] font-semibold hidden h-[1.25rem] shrink-0">
             1% OF THE INDUSTRY
           </div> */}
-            {/* <div className="w-[84.75rem] flex flex-row items-center justify-center gap-[1rem] text-[0.94rem] text-gray-700  lg:flex-row md:flex-row sm:flex-row">
-            <div className="flex flex-row items-center justify-start gap-[0.5rem]">
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/filter11.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Price
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter21.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Gender
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-            </div>
-            <div className="relative box-border w-[0.06rem] h-[1.06rem] border-r-[1px] border-solid border-card" />
-            <div className="flex flex-row items-start justify-start gap-[0.5rem]">
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Free Cancellation
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter4.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Pet Lover
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter4.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Single
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter4.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Couples
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter4.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Foot Baller
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter4.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Student
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/filter5.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Professional
-                </div>
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 hidden"
-                  alt=""
-                  src="/svg/chevron-down11.svg"
-                />
-              </div>
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <img
-                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                  alt=""
-                  src="/svg/filter5.svg"
-                />
-                <div className="relative leading-[1.38rem] font-semibold">
-                  Filter
-                </div>
-              </div>
-              <div className="flex flex-row items-start justify-start">
-                <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                  <img
-                    className="relative w-[1.25rem] h-[1.25rem]"
-                    alt=""
-                    src="/svg/map21.svg"
-                  />
-                  <div className="relative leading-[1.38rem] font-semibold">
-                    Show In Map
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
-            <div className="border-2 text-[1.25rem]">
+            <div className="flex gap-4 overflow-auto px-5 my-6">
+              <select className="listingCategoryUnActiveBtn outline-none mb-4">
+                <option value="amenities">
+                  Price
+                  {/* <FiChevronDown /> */}
+                </option>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">item 3</option>
+              </select>
+
+              <select className="listingCategoryUnActiveBtn outline-none mb-4">
+                <option value="price">Gender {/* <FiChevronDown /> */}</option>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <option value="item3">item 3</option>
+              </select>
+
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Free Cancellation
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Pet Lover
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Single
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Couples
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Foot Baller
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Student
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                Professional
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4">
+                <img src="/filter21.svg" alt="" /> Filter
+              </button>
+              <button className="listingCategoryUnActiveBtn min-w-fit mb-4 ">
+                <div className="flex items-center gap-2">
+                  <img src="/svg/map21.svg" alt="" />
+                  Show in map
+                </div>
+              </button>
+            </div>
+
+            <div className="text-[1.25rem]">
               <Link href="claim-service-fess">
                 <Partner />
               </Link>
@@ -350,7 +241,7 @@ function LookingForPartner() {
                 <Partner />
               </Link>
               <div className="w-full flex justify-center mt-10">
-                <button className="listingCategoryUnActiveBtn">
+                <button className="listingCategoryUnActiveBtn min-w-fit">
                   Load More
                 </button>
               </div>
