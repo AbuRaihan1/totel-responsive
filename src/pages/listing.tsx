@@ -11,7 +11,7 @@ export default function Listing() {
         <title>Listing</title>
       </Head>
       <RootLayout>
-        <div className="bg-white pt-3 flex flex-row items-start justify-start text-[0.94rem] text-gray-50  lg:h-auto  md:flex-row sm:flex-col">
+        <div className="bg-white pt-3 text-[0.94rem] text-gray-50 grid grid-cols-[17.5rem,1fr]">
           <ListingSideBar />
           <ListingUserCards />
         </div>

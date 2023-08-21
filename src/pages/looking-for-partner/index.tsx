@@ -1,4 +1,5 @@
 import RootLayout from "@/UI/RootLayout/RootLayout";
+import Container from "@/components/Container";
 import Partner from "@/components/partner/Partner";
 import Head from "next/head";
 import Link from "next/link";
@@ -10,7 +11,7 @@ function LookingForPartner() {
         <title>Looking for partner</title>
       </Head>
       <RootLayout>
-        <div className="mt-8 overflow-y-auto flex flex-col items-start justify-start text-gray-700">
+        {/* <div className="mt-8 overflow-y-auto flex flex-col items-start justify-start text-gray-700">
           <div className="self-stretch flex flex-col py-[0.75rem] px-[7.75rem] items-end justify-center bg-[url(/Images/frame-2@3x.png)] bg-cover bg-no-repeat bg-[top]   md:flex-col sm:flex-col">
             <div className="self-stretch rounded-3xl bg-white flex flex-col p-[2rem] items-start justify-center border-[1px] border-card md:flex-row sm:flex-col">
               <div className="self-stretch flex flex-1 flex-row items-end  gap-[1.5rem] w-full    md:flex-row sm:flex-col">
@@ -171,13 +172,14 @@ function LookingForPartner() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="self-stretch bg-system-background-light-primary flex flex-col pt-[1.5rem] pb-[4rem] pr-[7.5rem] pl-[7.75rem] items-center justify-center gap-[1.5rem] text-purple-600   md:flex-col sm:flex-col">
-          <div className="self-stretch relative tracking-[-0.1px] leading-[1.25rem] font-semibold hidden h-[1.25rem] shrink-0">
+        <Container>
+          <div className="">
+            {/* <div className="self-stretch relative tracking-[-0.1px] leading-[1.25rem] font-semibold hidden h-[1.25rem] shrink-0">
             1% OF THE INDUSTRY
-          </div>
-          <div className="w-[84.75rem] flex flex-row items-center justify-center gap-[1rem] text-[0.94rem] text-gray-700  lg:flex-row md:flex-row sm:flex-row">
+          </div> */}
+            {/* <div className="w-[84.75rem] flex flex-row items-center justify-center gap-[1rem] text-[0.94rem] text-gray-700  lg:flex-row md:flex-row sm:flex-row">
             <div className="flex flex-row items-center justify-start gap-[0.5rem]">
               <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
                 <img
@@ -335,27 +337,26 @@ function LookingForPartner() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="w-[80rem] flex flex-col items-start justify-start gap-[2rem] text-[1.25rem] text-label-color-light-primary   md:flex-row flex-wrap sm:flex-col">
-            <Link href="claim-service-fess">
-              <Partner />
-            </Link>
-            <Link href="claim-service-fess">
-              <Partner />
-            </Link>
-            <Link href="claim-service-fess">
-              <Partner />
-            </Link>
-            <div className="w-full flex justify-center">
-              <div className="rounded-3xl bg-system-background-light-primary shadow-[0px_1px_2px_rgba(16,_24,_40,_0.04)] overflow-hidden flex flex-row py-[0.75rem] px-[1.13rem] items-center justify-center gap-[0.38rem] border-[1px] border-solid border-card">
-                <div className="relative leading-[1.38rem] text-md font-semibold">
+            <div className="border-2 text-[1.25rem]">
+              <Link href="claim-service-fess">
+                <Partner />
+              </Link>
+              <Link href="claim-service-fess">
+                <Partner />
+              </Link>
+              <Link href="claim-service-fess">
+                <Partner />
+              </Link>
+              <div className="w-full flex justify-center mt-10">
+                <button className="listingCategoryUnActiveBtn">
                   Load More
-                </div>
+                </button>
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </RootLayout>
     </div>
   );

@@ -4,9 +4,9 @@ import React from "react";
 const ListingSideBar = () => {
   return (
     <div>
-      <div className="min-h-screen h-auto border-4 self-stretch bg-white box-border w-[17.5rem] overflow-hidden shrink-0 flex flex-col py-[0.75rem] px-[0rem] items-start justify-start gap-[0.25rem] border-r-[1px] border-solid border-card  lg:h-auto md:flex-col sm:flex-col">
+      <div className="min-h-screen fixed z-10 h-auto bg-white  w-[17.5rem] py-[0.75rem] border border-card">
         <Link href="/inbox">
-          <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
+          <div className="listingSidebardItemsStyle">
             <img
               className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0"
               alt=""
@@ -24,7 +24,7 @@ const ListingSideBar = () => {
           </div>
         </Link>
         <Link href="/listing">
-          <div className="border-4 self-stretch bg-purple-secondary-25 h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start relative gap-[0.75rem] text-purple">
+          <div className="listingSidebardItemsStyle">
             <img
               className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0 z-[0]"
               alt=""
@@ -47,7 +47,7 @@ const ListingSideBar = () => {
           </div>
         </Link>
         <Link href="/bookings">
-          <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
+          <div className="listingSidebardItemsStyle">
             <img
               className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0"
               alt=""
@@ -68,7 +68,7 @@ const ListingSideBar = () => {
             />
           </div>
         </Link>
-        <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
+        <div className="listingSidebardItemsStyle">
           <img
             className="relative w-[1.38rem] h-[1.38rem]"
             alt=""
@@ -88,9 +88,9 @@ const ListingSideBar = () => {
             src="/svg/chevrondown111.svg"
           />
         </div>
-        <div className="self-stretch h-[2.88rem] overflow-hidden shrink-0 flex flex-row py-[0rem] px-[1.75rem] box-border items-center justify-start gap-[0.75rem]">
+        <div className="listingSidebardItemsStyle">
           <img
-            className="relative w-[1.38rem] h-[1.38rem] overflow-hidden shrink-0"
+            className="relative w-[1.38rem] h-[1.38rem]"
             alt=""
             src="/svg/gear-1111121.svg"
           />

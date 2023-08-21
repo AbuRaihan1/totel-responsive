@@ -9,7 +9,7 @@ import {BiPhone} from "react-icons/bi";
 
 function BookingRoom() {
   return (
-    <div className="rounded-xl bg-white box-border w-[24rem] overflow-hidden shrink-0 flex flex-col items-start justify-start border-[1px] border-solid border-card">
+    <div className="rounded-xl bg-white   overflow-hidden shrink-0 flex flex-col items-start justify-start border-[1px] border-solid border-card">
       <img
         className="self-stretch relative max-w-full overflow-hidden h-[10.9rem] shrink-0 object-cover"
         alt=""

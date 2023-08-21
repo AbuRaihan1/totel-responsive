@@ -14,6 +14,18 @@
   .footer_link_style {
     @apply text-gray-50 text-base mt-3;
   }
+
+  .listingSidebardItemsStyle {
+    @apply h-[2.88rem] flex flex-row py-[0rem] px-[1.75rem] items-center relative gap-[0.75rem] hover:text-purple active:text-purple
+  }
+
+  .listingCategoryActiveBtn {
+    @apply px-4 font-semibold py-2 bg-purple text-white rounded-full
+  }
+
+  .listingCategoryUnActiveBtn {
+    @apply border-card border font-semibold px-4 py-2 rounded-full hover:bg-purple hover:text-white transition duration-300 hover:border-transparent
+  }
 }
 @tailwind utilities;
 

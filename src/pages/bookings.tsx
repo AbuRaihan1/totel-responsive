@@ -11,9 +11,9 @@ function bookings() {
         <title>Bookings</title>
       </Head>
       <RootLayout>
-        <div className="bg-white pt-3 flex flex-row items-start justify-start text-[0.94rem] text-gray-50  lg:h-auto  md:flex-row sm:flex-col">
+        <div className="bg-white pt-3 text-[0.94rem] text-gray-50 grid grid-cols-[17.5rem,1fr]">
           <ListingSideBar />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 py-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 px-5 py-4">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => (
               <BookingRoom key={i} />
             ))}
