@@ -16,15 +16,15 @@
   }
 
   .listingSidebardItemsStyle {
-    @apply h-[2.88rem] flex flex-row py-[0rem] px-[1.75rem] items-center relative gap-[0.75rem] hover:text-purple active:text-purple
+    @apply h-[2.88rem] flex flex-row py-[0rem] px-[1.75rem] items-center relative gap-[0.75rem] hover:text-purple active:text-purple;
   }
 
   .listingCategoryActiveBtn {
-    @apply px-4 font-semibold py-2 bg-purple text-white rounded-full
+    @apply px-4 font-semibold py-2 bg-purple text-white rounded-full;
   }
 
   .listingCategoryUnActiveBtn {
-    @apply border-card border font-semibold px-4 py-2 rounded-full hover:bg-purple hover:text-white transition duration-300 hover:border-transparent
+    @apply border-card border font-semibold px-4 py-2 rounded-full hover:bg-purple hover:text-white transition duration-300 hover:border-transparent;
   }
 }
 @tailwind utilities;
@@ -348,4 +348,18 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* selected partner slider code */
+.select-partner-swiper .swiper-pagination-bullet {
+  background: white !important;
+  width: 100px !important;
+  display: inline-block;
+  height: 6px !important;
+  border-radius: 5px !important;
+}
+.select-partner-swiper .swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  z-index: 12 !important;
 }

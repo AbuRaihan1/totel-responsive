@@ -8,7 +8,7 @@ import { useState } from "react";
 const index = () => {
   const [selectedButton, setSelectedButton] = useState(null);
 
-  const handleButtonClick = (buttonName) => {
+  const handleButtonClick = (buttonName: any) => {
     setSelectedButton(buttonName);
   };
 
@@ -33,7 +33,7 @@ const index = () => {
     { name: "Virginia", label: "Virginia" },
     { name: "Los Angeles", label: "Los Angeles" },
     { name: "New York", label: "New York" },
-    { name: "Los Angeles", label: "Los Angeles" },
+    { name: "Michigan", label: "Michigan" },
     { name: "San Francisco", label: "San Francisco" },
     { name: "Seattle", label: "Seattle" },
   ];
@@ -126,7 +126,7 @@ const index = () => {
           </div>
 
           <textarea
-            className="h-[120px] bg-[#F8F8FF] lg:w-[895px] w-full mt-9 px-8 py-6 outline-none focus:border-purple border border-card"
+            className="h-[120px] bg-[#F8F8FF] lg:w-[895px] w-full mt-9 px-8 py-6 outline-none focus:border-purple border border-card rounded"
             placeholder="Enter your destination"
           ></textarea>
 
