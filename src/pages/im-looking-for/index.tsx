@@ -30,6 +30,8 @@ const index = () => {
   const buttonData = [
     { name: "Bristol", label: "Bristol" },
     { name: "London", label: "London" },
+    { name: "Virginia", label: "Virginia" },
+    { name: "Los Angeles", label: "Los Angeles" },
     { name: "New York", label: "New York" },
     { name: "Los Angeles", label: "Los Angeles" },
     { name: "San Francisco", label: "San Francisco" },
