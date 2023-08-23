@@ -60,72 +60,80 @@ const index = () => {
   return (
     <div>
       <Container>
-        {/* i'm looking for, title */}
-        <div>
-          <h2 className="text-[52px] font-[600] font-inter">
-            I am looking for
-          </h2>
-          <p className="text-[18px] font-[400]">
-            Lorem ipsum dolor amet, consectetur adipiscing elit
-          </p>
-        </div>
-        {/* i am looking for, images */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-14">
-          {people?.map((person, idx) => {
-            return (
-              <div className="relative" key={idx}>
-                <Image
-                  width={400}
-                  height={0}
-                  src={person.img}
-                  alt="amar"
-                  className="w-full h-[200px] rounded-3xl"
-                />
-                <p className="text-white text-[20px] absolute bottom-5 left-6">
-                  {person.tag}
-                </p>
-              </div>
-            );
-          })}
-        </div>
+        <div className="py-5 pb-12">
+          {/* i'm looking for, title */}
+          <div>
+            <h2 className="text-[52px] font-[600] font-inter">
+              I am looking for
+            </h2>
+            <p className="text-[18px] font-[400]">
+              Lorem ipsum dolor amet, consectetur adipiscing elit
+            </p>
+          </div>
+          {/* i am looking for, images */}
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-14">
+            {people?.map((person, idx) => {
+              return (
+                <div className="relative" key={idx}>
+                  <Image
+                    width={400}
+                    height={0}
+                    src={person.img}
+                    alt="amar"
+                    className="w-full h-[200px] rounded-3xl"
+                  />
+                  <p className="text-white text-[20px] absolute bottom-5 left-6">
+                    {person.tag}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
 
-        {/* i am looking for destination */}
-        <div>
-          <h2 className="font-sans font-[700] mt-14 text-3xl">
-            Select your destination
-          </h2>
-          <p className="text-[#B0B0B0] text-[20px] font-medium">
-            Suggested destinations
-          </p>
-        </div>
+          {/* i am looking for destination */}
+          <div>
+            <h2 className="font-sans font-[700] mt-14 text-3xl">
+              Select your destination
+            </h2>
+            <p className="text-[#B0B0B0] text-[20px] font-medium">
+              Suggested destinations
+            </p>
+          </div>
 
-        <div className="flex flex-wrap gap-4 mt-9">
-          {/* <button style={buttonStyle}>Bristol</button>
+          <div className="flex flex-wrap gap-4 mt-9">
+            {/* <button style={buttonStyle}>Bristol</button>
           <button style={buttonStyle}>London</button>
           <button style={buttonStyle}>New York</button>
           <button style={buttonStyle}>Los Angeles</button>
           <button style={buttonStyle}>San Francisco</button>
           <button style={buttonStyle}>Seattle</button> */}
 
-          {buttonData.map((button) => (
-            <button
-              key={button.name}
-              style={
-                selectedButton === button.name
-                  ? { ...selectedStyle }
-                  : buttonStyle
-              }
-              onClick={() => handleButtonClick(button.name)}
-            >
-              {button.label}
-            </button>
-          ))}
-        </div>
+            {buttonData.map((button) => (
+              <button
+                key={button.name}
+                style={
+                  selectedButton === button.name
+                    ? { ...selectedStyle }
+                    : buttonStyle
+                }
+                onClick={() => handleButtonClick(button.name)}
+              >
+                {button.label}
+              </button>
+            ))}
+          </div>
 
-        <textarea
-          className="h-[120px] bg-[#F8F8FF] lg:w-[895px] w-full mt-9 px-8 py-6 outline-none focus:border-purple border border-card"
-          placeholder="Enter your destination"
-        ></textarea>
+          <textarea
+            className="h-[120px] bg-[#F8F8FF] lg:w-[895px] w-full mt-9 px-8 py-6 outline-none focus:border-purple border border-card"
+            placeholder="Enter your destination"
+          ></textarea>
+
+          <div className="flex items-end justify-end">
+            <button className="bg-[#574EFA] rounded-full px-9 py-3 text-white text-[20px] font-semibold mt-4">
+              Continue
+            </button>
+          </div>
+        </div>
       </Container>
     </div>
   );
