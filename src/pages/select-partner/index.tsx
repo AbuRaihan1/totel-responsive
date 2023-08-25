@@ -1,9 +1,15 @@
-import { Navigation, Pagination } from "swiper/modules";
+// import { Navigation, Pagination } from "swiper/modules";
+import SwiperCore, { Pagination, Navigation } from "swiper";
+import "swiper/swiper.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+// import "swiper/components/navigation/navigation.min.css";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+SwiperCore.use([Pagination, Navigation]);
+
 import Container from "@/components/Container";
 
 export default function App() {
