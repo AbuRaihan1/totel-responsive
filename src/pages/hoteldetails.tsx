@@ -493,7 +493,79 @@ export default function Hoteldetails() {
 
                       {/* hour tab pannel  */}
                       <TabPanel>
-                        <h2>Any content 2</h2>
+                        <p className="text-[#272D37] text-sm font-[500] mt-4">
+                          Select Duration
+                        </p>
+                        <select className="select border border-card focus:outline-none w-full rounded-full mt-3 mb-[10px]  max-w-xs">
+                          <option disabled selected>
+                            1 hour
+                          </option>
+                          <option>2 hour</option>
+                          <option>3 hour</option>
+                          <option>4 hour</option>
+                          <option>5 hour</option>
+                          <option>6 hour</option>
+                        </select>
+                        <p className="text-[#574EFA] text-sm font-medium flex justify-end cursor-pointer">
+                          See available time slots
+                        </p>
+
+                        <div className="mt-4">
+                          <p className="text-tiny font-medium text-[#272D37]">
+                            Guests
+                          </p>
+                          <select className="select border border-card focus:outline-none w-full rounded-full mt-2 mb-4  max-w-xs">
+                            <option disabled selected>
+                              Guests
+                            </option>
+                            <option>3 guests, 1 infant, 1 pet</option>
+                            <option>2 guests</option>
+                            <option>3 guests</option>
+                            <option>1 guests, 1 infant, 1 pet</option>
+                            <option>2 guests, 1 infant, 1 pet</option>
+                          </select>
+                        </div>
+                        <button className="text-sm font-semibold bg-purple px-[18px] py-3 rounded-full w-full text-white">
+                          Send Proposal
+                        </button>
+
+                        <p className="text-gray-50 text-center text-tiny mt-4">
+                          You will not be charged yet
+                        </p>
+                        <div className="mt-4">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <p className="text-black text-[16px] font-normal">
+                                $75 x 7 nights
+                              </p>
+                            </div>
+                            <div>
+                              <p>$525</p>
+                            </div>
+                          </div>
+
+                          <div className="flex items-center justify-between">
+                            <div>
+                              <p>Weekly discount</p>
+                            </div>
+                            <div>
+                              <p className="text-[#10B981]">-$28</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="border border-light-primary my-4"></div>
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="font-semibold">Total</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold">$493</p>
+                          </div>
+                        </div>
+
+                        <button className="text-sm font-semibold bg-purple px-[18px] py-3 rounded-full w-full text-white mt-4">
+                          See more details
+                        </button>
                       </TabPanel>
 
                       {/* day tab pannel  */}
