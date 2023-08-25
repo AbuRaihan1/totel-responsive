@@ -251,6 +251,16 @@ export default function Hoteldetails() {
   const [checkInDate, setCheckInDate] = useState<Date | null>(new Date());
   const [checkOutDate, setCheckOutDate] = useState<Date | null>(new Date());
 
+  const [isSeeMoreDetailsOpen, setIsSeeMoreDetailsOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsSeeMoreDetailsOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsSeeMoreDetailsOpen(false);
+  };
+
   return (
     <section>
       <Head>
@@ -563,9 +573,104 @@ export default function Hoteldetails() {
                           </div>
                         </div>
 
-                        <button className="text-sm font-semibold bg-purple px-[18px] py-3 rounded-full w-full text-white mt-4">
+                        <button
+                          className="text-sm font-semibold bg-purple px-[18px] py-3 rounded-full w-full text-white mt-4"
+                          onClick={openPopup}
+                        >
                           See more details
                         </button>
+
+                        {isSeeMoreDetailsOpen && (
+                          <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50 ">
+                            <div className="bg-white rounded-lg p-6 max-w-[1293px] lg:h-[650px] sm:w-full  h-auto  max-h-full mx-4 relative">
+                              <button
+                                onClick={closePopup}
+                                className="absolute top-2 right-3 border-2 font-bold text-black h-8 w-8 flex justify-center items-center bg-gray-200 rounded-full p-1"
+                              >
+                                &#10005;
+                              </button>
+                              <div className="">
+                                <div className="select-area grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-start">
+                                  <div>
+                                    <p className="ml-2 mb-1 text-[#272D37] text-[16px] font-medium">
+                                      Select Duration
+                                    </p>
+                                    <select className="select border border-card focus:outline-none w-[273px] rounded-full mt-2 mb-4  max-w-xs">
+                                      {" "}
+                                      <option disabled selected>
+                                        Hour
+                                      </option>
+                                      <option>2 hour</option>
+                                      <option>3 hour</option>
+                                      <option>4 hour</option>
+                                      <option>5 hour</option>
+                                      <option>6 hour</option>
+                                    </select>
+                                  </div>
+
+                                  <div>
+                                    <p className="ml-2 mb-1 text-[#272D37] text-[16px] font-medium">
+                                      Year
+                                    </p>
+                                    <select className="w-[206px] select border border-card focus:outline-none rounded-full mt-2 mb-4  max-w-xs">
+                                      {" "}
+                                      <option disabled selected>
+                                        2023
+                                      </option>
+                                      <option>2023</option>
+                                      <option>2024</option>
+                                      <option>2025</option>
+                                      <option>2026</option>
+                                      <option>2027</option>
+                                    </select>
+                                  </div>
+
+                                  <div>
+                                    <p className="ml-2 mb-1 text-[#272D37] text-[16px] font-medium">
+                                      Month
+                                    </p>
+                                    <select className="select border border-card focus:outline-none w-[206px] rounded-full mt-2 mb-4  max-w-xs">
+                                      {" "}
+                                      <option disabled selected>
+                                        Month
+                                      </option>
+                                      <option>January</option>
+                                      <option>February</option>
+                                      <option>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                    </select>
+                                  </div>
+
+                                  <div>
+                                    <p className="ml-2 mb-1 text-[#272D37] text-[16px] font-medium">
+                                      Week
+                                    </p>
+                                    <select className="select border border-card focus:outline-none w-[206px] rounded-full mt-2 mb-4  max-w-xs">
+                                      {" "}
+                                      <option disabled selected>
+                                        Week
+                                      </option>
+                                      <option>Week</option>
+                                      <option>21st - 27st</option>
+                                      <option>31st - 37st</option>
+                                      <option>41st - 47st</option>
+                                      <option>51st - 57st</option>
+                                      <option>11st - 17st</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </TabPanel>
 
                       {/* day tab pannel  */}
