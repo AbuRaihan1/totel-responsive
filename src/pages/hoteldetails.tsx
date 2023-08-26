@@ -792,7 +792,7 @@ export default function Hoteldetails() {
                                                   className="text-center flex mb-5"
                                                   key={idx}
                                                 >
-                                                  <button className="block mt-10 mx-auto text-[16px] font-medium text-[#929292]">
+                                                  <button className="block mt-10 mx-auto text-[16px] font-medium text-[#929292] lg:bg-transparent lg:border-none lg:px-0 lg:py-0 bg-[#F2F2F7] rounded-full lg:min-w-0 min-w-[147px] py-2 px-3 lg:focus:text-purple lg:focus:bg-transparent focus:bg-purple focus:text-white">
                                                     {dayTime}
                                                   </button>
                                                 </div>
