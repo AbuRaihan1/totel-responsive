@@ -776,7 +776,7 @@ export default function Hoteldetails() {
                                   return (
                                     <div key={idx} className="">
                                       <div className="text-center">
-                                        <div className="lg:border-t-8 lg:rounded-xl lg:bg-[#ECEBFF] text-purple lg:text-[20px] font-semibold lg:py-4 flex lg:flex-col flex-row text-[16px] lg:px-7  md:gap-3 gap-3">
+                                        <div className="lg:border-t-8 lg:rounded-xl lg:bg-[#ECEBFF] text-purple lg:text-[20px] font-semibold lg:py-4 flex lg:flex-col flex-row text-[16px] lg:px-7  md:gap-3 gap-3 lg:mb- mb-10">
                                           <h1 className="">
                                             {bookingTime.dayName}
                                           </h1>
@@ -792,7 +792,7 @@ export default function Hoteldetails() {
                                                   className="text-center flex mb-5"
                                                   key={idx}
                                                 >
-                                                  <button className="block mt-10 mx-auto text-[16px] font-medium text-[#929292] lg:bg-transparent lg:border-none lg:px-0 lg:py-0 bg-[#F2F2F7] rounded-full lg:min-w-0 min-w-[147px] py-2 px-3 lg:focus:text-purple lg:focus:bg-transparent focus:bg-purple focus:text-white">
+                                                  <button className="block lg:mt-5 mt:4 mx-auto text-[16px] font-medium text-[#929292] lg:bg-transparent lg:border-none lg:px-0 lg:py-0 bg-[#F2F2F7] rounded-full lg:min-w-0 min-w-[147px] py-2 px-3 lg:focus:text-purple lg:focus:bg-transparent focus:bg-purple focus:text-white">
                                                     {dayTime}
                                                   </button>
                                                 </div>
@@ -807,9 +807,9 @@ export default function Hoteldetails() {
                               </div>
 
                               <div>
-                                <div className="mt-8 h-[10px] mx-6 rounded-full bg-gradient-to-b from-[#827BFF] to-[#DDDBFF]"></div>
-                                <div className="flex justify-between items-center mt-5">
-                                  <div className="flex gap-7 items-center  mx-6">
+                                <div className="lg:flex hidden mt-8 h-[10px] mx-6 rounded-full bg-gradient-to-b from-[#827BFF] to-[#DDDBFF]"></div>
+                                <div className="lg:flex block justify-between items-center mt-5 ">
+                                  <div className="lg:flex gap-7 items-center  mx-6 hidden">
                                     <button className="text-[16px] font-medium text-purple">
                                       Available times
                                     </button>
@@ -818,11 +818,11 @@ export default function Hoteldetails() {
                                     </button>
                                   </div>
 
-                                  <div className="gap-4 flex">
-                                    <button className="bg-[#F3F2FF] px-5 py-3  font-semibold text-black text-sm rounded-full">
+                                  <div className="gap-4 lg:flex">
+                                    <button className="bg-[#F3F2FF] px-5 py-3  font-semibold text-black text-sm rounded-full lg:flex hidden">
                                       Back
                                     </button>
-                                    <button className="bg-purple px-5 py-3 font-semibold text-white text-sm rounded-full">
+                                    <button className="bg-purple px-5 py-3 font-semibold text-white text-sm rounded-full w-full">
                                       Book time
                                     </button>
                                   </div>
