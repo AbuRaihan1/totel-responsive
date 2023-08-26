@@ -771,23 +771,25 @@ export default function Hoteldetails() {
                                 </div>
                               </div>
 
-                              <div className="flex justify-between gap-2 mt-10">
+                              <div className="flex justify-between overflow-auto mt-10 lg:gap-1 md:gap-4 gap-7">
                                 {bookingTimeSlots.map((bookingTime, idx) => {
                                   return (
                                     <div key={idx} className="">
                                       <div className="text-center">
-                                        <div className="border-t-8 rounded-xl bg-[#ECEBFF] text-purple text-[20px] font-semibold py-4 px-7 ">
+                                        <div className="lg:border-t-8 lg:rounded-xl lg:bg-[#ECEBFF] text-purple lg:text-[20px] font-semibold lg:py-4 flex lg:flex-col flex-row text-[16px] lg:px-7  md:gap-3 gap-3">
                                           <h1 className="">
                                             {bookingTime.dayName}
                                           </h1>
-                                          <p>{bookingTime.date}</p>
+                                          <p className=" lg:text-center text-left">
+                                            {bookingTime.date}
+                                          </p>
                                         </div>
-                                        <div className="flex  flex-col">
+                                        <div className="flex flex-col">
                                           {bookingTime.dayTimeSlots.map(
                                             (dayTime, idx) => {
                                               return (
                                                 <div
-                                                  className="text-center flex"
+                                                  className="text-center flex mb-5"
                                                   key={idx}
                                                 >
                                                   <button className="block mt-10 mx-auto text-[16px] font-medium text-[#929292]">
