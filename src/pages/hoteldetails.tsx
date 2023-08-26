@@ -261,6 +261,108 @@ export default function Hoteldetails() {
     setIsSeeMoreDetailsOpen(false);
   };
 
+  const bookingTimeSlots = [
+    {
+      dayName: "Monday",
+      date: "21",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+    {
+      dayName: "Tuesday",
+      date: "22",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+    {
+      dayName: "Wednesday",
+      date: "23",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+    {
+      dayName: "Thursday",
+      date: "24",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+    {
+      dayName: "Friday",
+      date: "25",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+    {
+      dayName: "Saturday",
+      date: "26",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+
+    {
+      dayName: "Sunday",
+      date: "27",
+      dayTimeSlots: [
+        "7:00 AM",
+        "7:30 AM",
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM",
+      ],
+    },
+  ];
+
   return (
     <section>
       <Head>
@@ -582,10 +684,10 @@ export default function Hoteldetails() {
 
                         {isSeeMoreDetailsOpen && (
                           <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50 ">
-                            <div className="bg-white rounded-lg p-6 max-w-[1293px] lg:h-[650px] sm:w-full  h-auto  max-h-full mx-4 relative">
+                            <div className="overflow-auto bg-white rounded-lg p-6 pt-10 my-5 max-w-[1293px] lg:h-[1034px] w-full  h-auto  max-h-full py-10 mx-4 relative">
                               <button
                                 onClick={closePopup}
-                                className="absolute top-2 right-3 border-2 font-bold text-black h-8 w-8 flex justify-center items-center bg-gray-200 rounded-full p-1"
+                                className="absolute top-9 right-10 border-2 font-bold text-black h-8 w-8 flex justify-center items-center bg-gray-200 rounded-full p-1"
                               >
                                 &#10005;
                               </button>
@@ -665,6 +767,62 @@ export default function Hoteldetails() {
                                       <option>51st - 57st</option>
                                       <option>11st - 17st</option>
                                     </select>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="flex justify-between gap-2 mt-10">
+                                {bookingTimeSlots.map((bookingTime, idx) => {
+                                  return (
+                                    <div key={idx} className="">
+                                      <div className="text-center">
+                                        <div className="border-t-8 rounded-xl bg-[#ECEBFF] text-purple text-[20px] font-semibold py-4 px-7 ">
+                                          <h1 className="">
+                                            {bookingTime.dayName}
+                                          </h1>
+                                          <p>{bookingTime.date}</p>
+                                        </div>
+                                        <div className="flex  flex-col">
+                                          {bookingTime.dayTimeSlots.map(
+                                            (dayTime, idx) => {
+                                              return (
+                                                <div
+                                                  className="text-center flex"
+                                                  key={idx}
+                                                >
+                                                  <button className="block mt-10 mx-auto text-[16px] font-medium text-[#929292]">
+                                                    {dayTime}
+                                                  </button>
+                                                </div>
+                                              );
+                                            }
+                                          )}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+
+                              <div>
+                                <div className="mt-8 h-[10px] mx-6 rounded-full bg-gradient-to-b from-[#827BFF] to-[#DDDBFF]"></div>
+                                <div className="flex justify-between items-center mt-5">
+                                  <div className="flex gap-7 items-center  mx-6">
+                                    <button className="text-[16px] font-medium text-purple">
+                                      Available times
+                                    </button>
+                                    <button className="text-[16px] font-medium text-[#ABABBB]">
+                                      Booked times
+                                    </button>
+                                  </div>
+
+                                  <div className="gap-4 flex">
+                                    <button className="bg-[#F3F2FF] px-5 py-3  font-semibold text-black text-sm rounded-full">
+                                      Back
+                                    </button>
+                                    <button className="bg-purple px-5 py-3 font-semibold text-white text-sm rounded-full">
+                                      Book time
+                                    </button>
                                   </div>
                                 </div>
                               </div>
